@@ -14,7 +14,7 @@ def scrape_bedrijven(zoekterm, categorie):
     resultaten = []
     st.write(f"🔍 Bezig met: **{zoekterm}** ...")
     for pagina in range(0, 3):  # verhoog voor meer diepte
-        url = f"url = f"https://duckduckgo.com/html/?q={zoekterm}+Amsterdam"
+        url = f"https://duckduckgo.com/html/?q={zoekterm}+Amsterdam"
         r = requests.get(url, headers=headers)
         soup = BeautifulSoup(r.text, "html.parser")
 
